@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Gym Website </title>
+
+        <style>
+
+            body{
+                margin: 0px;
+                padding: 0px;
+                background-image: url(image/banner.jpg);
+                color: beige;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .left{
+                /* border: 2px solid red; */
+                display: inline-block;
+                position: absolute;
+                left: 34px;
+                top: 20px;
+            }
+
+            .left img{
+                width: 150px;
+                height: 50px;
+            }
+
+            .center{
+                /* border: 2px solid green; */
+                width: 40%;
+                margin: 20px auto;
+
+            }
+
+            .navbar ul li{
+                display: inline-block;
+                list-style-type: none;
+                font-size: 20px;
+                margin: 20px 0px 0px 0px;
+            }
+
+            .navbar a{
+                color: white;
+                text-decoration-line: none;
+                padding: 20px;
+            }
+
+            .navbar ul a:hover{
+                text-decoration-line: underline;
+                color: gray;
+            }
+
+            .right{
+                /* border: 2px solid blue; */
+                display: inline-block;
+                position: absolute;
+                right: 34px;
+                top: 20px;
+            }
+
+            .container {
+                width: 50%;
+                /* border: 2px solid white; */
+                margin: 100px 0px 50px 20px;
+                border-radius: 10px;
+                padding: 20px;
+            }
+
+          .btn{
+              font-size: 18px;
+              padding: 10px;
+          }
+
+          .btn button{
+              margin-top: 50px;
+          }
+
+        
+
+            .forms-group input{
+                text-align: center;
+                display: block;
+                border: 2px solid green;
+                margin: 10px auto;
+                font-size: 15px;
+                padding: 5px;
+                width: 50%;
+                border-radius: 8px;
+                display: block;
+            }
+
+            .container h1{
+                text-align: center;
+            }
+
+            .container button{
+                display: block;
+                width: 50%;
+                padding: 5px;
+                margin: 15px auto;
+                font-size: 15px;
+                border-radius: 10px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <header class="header">
+
+            <!-- Left Box For Logo  -->
+            <div class="left">
+                  <img src="image/logo-white.png" alt="Logo of the WebPage">
+            </div>
+
+            <!-- Center Box For navigation -->
+            <div class="center">
+               <nav  class="navbar">
+                <ul>
+                    <li><a href="@">Home</a></li>
+                    <li><a href="@">About Us</a></li>
+                    <li><a href="@">Course</a></li>
+                    <li><a href="@">Fees</a></li>
+                    <li><a href="@">Gallery</a></li>
+                </ul>
+               </nav>
+            </div>
+
+            <!-- Right Box for Buttons -->
+            <div class="right">
+                   <buttons class="btn"> Contact Us </buttons>
+                   <buttons class="btn"> Email </buttons>
+            </div>
+
+        </header>
+
+
+
+        <div class="container">
+            <h1> Join The Best Gym in Nagpur </h1>
+
+            <form action="noaction.php">
+                <div class="forms-group">
+                    <input type="text" placeholder="Enter Your Name">
+                </div>
+
+                <div class="forms-group">
+                    <input type="text" placeholder="Enter Your Age">
+                </div>
+
+                <div class="forms-group">
+                    <input type="text" placeholder="Enter Your Gender">
+                </div>
+
+                <div class="forms-group">
+                    <input type="text" placeholder="Enter Your Locality">
+                </div>
+            </form>
+
+            <button class="btn"> Submit </button>
+        </div>
+        
+    </body>
+</html>
